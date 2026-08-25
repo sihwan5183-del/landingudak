@@ -72,6 +72,29 @@
     transform:translateY(10px);
     transition:opacity .8s ease, transform .8s ease;
   }
+  .eyebrow-badge{
+    position:relative;z-index:1;
+    margin-bottom:24px;
+    opacity:0;
+    transform:translateY(10px);
+    transition:opacity .8s ease, transform .8s ease;
+  }
+  .badge-desc{
+    display:block;
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:.24em;
+    text-transform:uppercase;
+    color:var(--mist);
+    margin-bottom:7px;
+  }
+  .badge-name{
+    display:block;
+    font-size:16px;
+    font-weight:600;
+    letter-spacing:.01em;
+    color:var(--white);
+  }
 
   .stage{
     position:relative;z-index:1;
@@ -117,7 +140,7 @@
     font-size:clamp(15px,3.7vw,18px);
     font-weight:400;
     color:var(--mist);
-    max-width:320px;
+    max-width:400px;
     line-height:1.55;
     opacity:0;
     transform:translateY(12px);
@@ -177,6 +200,7 @@
   }
 
   .in-view .eyebrow,
+  .in-view .eyebrow-badge,
   .in-view .stage,
   .in-view h1,
   .in-view h2,
@@ -320,12 +344,15 @@
 
   <section class="section" id="hero">
     <div class="glow"></div>
-    <span class="eyebrow">PRE-RESERVATION</span>
+    <div class="eyebrow-badge">
+      <span class="badge-desc">유플러스 공식파트너사</span>
+      <span class="badge-name">“유플러스 다이렉트”</span>
+    </div>
     <div class="stage">
       <img src="assets/hero.jpg" alt="iPhone 18" width="633" height="950">
     </div>
     <h1>iPhone 18</h1>
-    <p class="sub">가장 먼저, 가장 빠르게 만나보세요.</p>
+    <p class="sub">아이폰 18 사전예약 정보를<br>가장 먼저 누구보다, 빠르고, 정확하게 알려드립니다.</p>
     <button class="cta" id="ctaBtn">사전예약 신청하기</button>
     <div class="cta-note" id="ctaNote">사전예약 페이지 준비 중입니다</div>
     <div class="scroll-cue"></div>
